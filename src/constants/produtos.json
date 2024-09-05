@@ -3,14 +3,46 @@
     "id": 1,
     "name": "Perfume",
     "desc": "Miguel Rousseouf",
+    "categoria": "cosmeticos",
     "value": "100.00",
+    "status": 1,
     "image": "/src/assets/perfume.jpg"
   },
   {
     "id": 2,
     "name": "Colar",
     "desc": "Jand Karno em perolas",
+    "categoria": "joias",
     "value": "2200.00",
+    "status": 0,
     "image": "/src/assets/colar.webp"
+  },
+  {
+    "id": 3,
+    "name": "Colar Estrela",
+    "desc": "Colar banhado a prata",
+    "categoria": "joias",
+    "status": 1,
+    "value": "40.00",
+
+    "image": "/src/assets/colarEstrela.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Brinco coracao",
+    "desc": "Brinco coracao folheado e antialergico",
+    "categoria": "joias",
+    "value": "15.00",
+    "status": 1,
+    "image": "/src/assets/brinco.webp"
+  },
+  {
+    "id": 5,
+    "name": "Colar Coracao",
+    "desc": "Colar Coracao banhado a ouro",
+    "categoria": "joias",
+    "value": "150.00",
+    "status": 1,
+    "image": "/src/assets/colarCoracao.webp"
   }
 ]

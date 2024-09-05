@@ -1,0 +1,16 @@
+.card{
+    background-color: rgb(68, 68, 68);
+    width: 20%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.status{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
