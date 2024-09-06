@@ -28,4 +28,15 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.pesquisas{
+  display: flex;
+  gap: 10px;
+}
+.pesquisas input{
+  padding: 5px;
+  border-radius: 15px;
 }
