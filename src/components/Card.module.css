@@ -8,9 +8,16 @@
     border-radius: 10px;
 }
 
-.status{
+.vermelho{
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: red;
+}
+
+.verde{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(22, 170, 79);
 }

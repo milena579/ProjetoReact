@@ -7,8 +7,8 @@ export const Card = ({name, desc, value, status, image}) => {
           <h1>{name}</h1>
           <h2>{desc}</h2>
           <p>{value}</p>
-          <p className={style.status}>{`status ?  sta`}</p>
-          <img src={image} alt={name} width={150} height={"auto"}/>
+          <p className={status? style.verde : style.vermelho}></p>
+          <img src={image} alt={name} width={150} height={"150"}/>
       </div>
   )
 }
