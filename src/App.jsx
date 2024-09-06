@@ -4,6 +4,7 @@ import { CardRick } from './components/CardRick'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
+import { Mapa } from './components/Mapa'
 
 function App() {
   const [show, setShow] = useState("")
@@ -71,9 +72,9 @@ function App() {
      {show === "map" &&
         <>
       <h2>Mapa</h2>
-          <div>
-              mapa aqui
-          </div>
+         
+          <Mapa/>
+          
          </>
       }
     </div>
