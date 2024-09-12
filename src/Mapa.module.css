@@ -1,0 +1,11 @@
+.tela{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+.mapa{
+    border-radius: 20px;
+}

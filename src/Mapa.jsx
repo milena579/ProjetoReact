@@ -1,7 +1,7 @@
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
-import "leaflet-defaulticon-compatibility";
-
+import "leaflet-defaulticon-compatibility"
+import style from  './Mapa.module.css'
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
 import App from './App';
 
@@ -11,17 +11,20 @@ export const Mapa = () => {
     return(
     <>
         <App/>
-        <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{width: '100vw', height:'300px'}}>
-            <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={position}>
-                <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-            </Marker>
-        </MapContainer>
+        <div className={style.tela}>
+            <h1>Mapa</h1>
+            <MapContainer className={style.mapa} center={position} zoom={13} scrollWheelZoom={false} style={{width: '90vw', height:'600px'}}>
+                <TileLayer
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={position}>
+                    <Popup>
+                        A pretty CSS3 popup. <br /> Easily customizable.
+                    </Popup>
+                </Marker>
+            </MapContainer>
+        </div>
     </>
     )
 }
