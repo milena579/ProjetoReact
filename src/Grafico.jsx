@@ -8,7 +8,7 @@ import {
     Legend,
   } from "recharts";
 import App from "./App";
-
+import style from  './Grafico.module.css'
 const data = [
   {
     name: 'Page A',
@@ -56,26 +56,32 @@ const data = [
 
 export const Grafico = () => {
     return (
-        <>
+        <>  
             <App></App>
-            <LineChart width={400} height={400} data={data}>
-                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-            </LineChart>
+            <div className={style.graficos}>
+              <div className={style.grafico}>
+              <LineChart width={800} height={400} data={data}>
+                  <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+              </LineChart>
+              </div>
 
-            <LineChart width={500} height={300} data={data}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" padding={{ left: 30, right: 30 }} />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Line
-            type="monotone"
-            dataKey="pv"
-            stroke="#8884d8"
-            activeDot={{ r: 8 }}
-            />
-            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-            </LineChart>
+              <div className={style.grafico}>
+                <LineChart width={800} height={300} data={data}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" padding={{ left: 30, right: 30 }} />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line
+                type="monotone"
+                dataKey="pv"
+                stroke="#8884d8"
+                activeDot={{ r: 8 }}
+                />
+                <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                </LineChart>
+              </div>
+            </div>
         
         </>
     );

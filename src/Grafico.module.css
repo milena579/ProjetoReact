@@ -1,0 +1,19 @@
+.graficos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    padding: 15px;
+}
+
+.grafico{
+    width: 80%;
+    border: solid 1px rgba(255, 255, 255, 0.425);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
