@@ -5,19 +5,71 @@
     align-items: center;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
+    width: 250px;
+    height: 300px;
 }
 
+.card p{
+    text-align: center;
+}
 .vermelho{
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: red;
 }
-
 .verde{
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: rgb(22, 170, 79);
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(68, 68, 68);
+    align-items: center;
+    width: 500px;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.botao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.botao a{
+    position: absolute;
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.imgInfo{
+    width: 100%;
+    display: flex;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.info p{
+    display: flex;
+    flex-direction: row;
+}
+.vivo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

@@ -40,3 +40,21 @@
   padding: 5px;
   border-radius: 15px;
 }
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.abrirInfo{
+  border-radius: 50%;
+  background-color: grey;
+  width: 25px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}

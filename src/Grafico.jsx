@@ -7,6 +7,7 @@ import {
     Tooltip,
     Legend,
   } from "recharts";
+import App from "./App";
 
 const data = [
   {
@@ -56,6 +57,7 @@ const data = [
 export const Grafico = () => {
     return (
         <>
+            <App></App>
             <LineChart width={400} height={400} data={data}>
                 <Line type="monotone" dataKey="uv" stroke="#8884d8" />
             </LineChart>
