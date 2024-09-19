@@ -20,7 +20,7 @@ export const Mapa = () => {
                 />
                 <Marker position={position}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                       <a target='_blank' href="https://g.co/kgs/9rjY2Tr">Maps</a>
                     </Popup>
                 </Marker>
             </MapContainer>
